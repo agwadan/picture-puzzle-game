@@ -9,6 +9,7 @@ const Login = () => {
   const handleLogin = async () => {
     // Fetch the JSON file
     const response = await fetch('users.json');
+    console.log(response);
     const data = await response.json();
 
     // Find the user
@@ -16,6 +17,7 @@ const Login = () => {
 
     if (user) {
       alert('Logged in successfully');
+      navigate('/board');
       // Here you might want to switch the view, e.g., by setting some state in a parent component
     } else {
       alert('Invalid username or password');

@@ -19,40 +19,40 @@ const Signup = () => {
     // Since we're using a static JSON file, we'll just simulate a successful signup
 
     alert('Signed up successfully. You can now log in.');
-    navigate('/login');
+    navigate('/');
   };
 
   return (
     <div className="signup-form">
       <label>
         Name:
-        <input type="text" value={name} onChange={e => setName(e.target.value)} />
+        <input type="text" required value={name} onChange={e => setName(e.target.value)} />
       </label>
       <label>
         Gender:
-        <input type="text" value={gender} onChange={e => setGender(e.target.value)} />
+        <input type="text" required value={gender} onChange={e => setGender(e.target.value)} />
       </label>
       <label>
         Birthday:
-        <input type="date" value={birthday} onChange={e => setBirthday(e.target.value)} />
+        <input type="date" required value={birthday} onChange={e => setBirthday(e.target.value)} />
       </label>
       <label>
         Email:
-        <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
+        <input type="email" required value={email} onChange={e => setEmail(e.target.value)} />
       </label>
       <label>
         Address:
-        <input type="text" value={address} onChange={e => setAddress(e.target.value)} />
+        <input type="text" required value={address} onChange={e => setAddress(e.target.value)} />
       </label>
       <label>
         Phone Number:
-        <input type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
+        <input type="tel" required value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
       </label>
       <label>
         Location:
-        <input type="text" value={location} onChange={e => setLocation(e.target.value)} />
+        <input type="text" required value={location} onChange={e => setLocation(e.target.value)} />
       </label>
-      <button onClick={handleSignup}>Sign Up</button>
+      <button type='submit' onClick={handleSignup}>Sign Up</button>
     </div>
   );
 };

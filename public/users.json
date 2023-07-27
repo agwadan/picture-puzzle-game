@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "gender": "Male",
+      "birthday": "1990-01-01",
+      "email": "john@example.com",
+      "address": "123 Main St",
+      "phoneNumber": "555-555-5555",
+      "location": "New York, NY",
+      "username": "johndoe",
+      "password": "password123"
+    }
+  ]
+}
