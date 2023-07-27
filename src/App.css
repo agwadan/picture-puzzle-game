@@ -1,0 +1,27 @@
+/* App.css */
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.tile {
+  height: 3rem;
+  width: 3rem;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  transition: background 0.5s;
+}
