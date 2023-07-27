@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -6,6 +6,11 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+useEffect(() => {
+  alert(`The data for the login is temporarily stored in a JSON file. \n Use these details to login; \n Username: johndoe \nPassword: password123`);
+}, [])
+
+  
   const handleLogin = async () => {
     // Fetch the JSON file
     const response = await fetch('users.json');
